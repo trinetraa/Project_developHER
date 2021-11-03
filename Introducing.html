@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Introducing</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+
+      html,body{
+        height: 100%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(90deg, #ec4a8c
+ 0%, #e90e65 100%);
+        text-align: center;
+      }
+      .container{
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .card{
+        height: 280px;
+        max-width: 350px;
+        margin: 0 20px;
+        background: white;
+        transition: 0.4s;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      }
+      .card:hover{
+        height: 470px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+      }
+      .card .img{
+        height: 200px;
+        width: 100%;
+      }
+      .card .img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .card .top-text{
+        padding: 5px;
+      }
+      .card .top-text .name{
+        font-size: 25px;
+        font-weight: 600;
+        color: #202020;
+      }
+      .card .top-text p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #e90e65;
+        line-height: 20px;
+      }
+      .card .bottom-text{
+        padding: 0 20px 10px 20px;
+        margin-top: 5px;
+        background: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.1s;
+      }
+      .card:hover .bottom-text{
+        opacity: 1;
+        visibility: visible;
+      }
+      .card .bottom-text .text{
+        text-align: justify;
+      }
+      .card .bottom-text .btn{
+        margin: 10px 0;
+        text-align: left;
+      }
+      .card .bottom-text .btn a{
+        text-decoration: none;
+        background: #e90e65;
+        color: #f2f2f2;
+        padding: 5px 8px;
+        border-radius: 3px;
+        display: inline-flex;
+        transition: 0.2s;
+      }
+      .card .bottom-text .btn a:hover{
+        transform: scale(0.9);
+      }
+      @media screen and (max-width: 978px) {
+        .container{
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .card{
+          max-width: 700px;
+          margin: 20px 0;
+        }
+      }
+      h1{
+        color:white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <H1>Know Your Seniors</H1>
+    <div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="profile-2.jpeg">
+        </div>
+        <div class="top-text">
+          <div class="name">Reena Singh</div>
+          <p>App Developer</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text">Reena is an app developer with 4 years of experience. She has interned with Microsoft and currently works at Zomato.</div>
+          <div class="btn">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img">
+          <img src="profile-1.jpeg">
+        </div>
+        <div class="top-text">
+          <div class="name">Sugandha Mishra</div>
+          <p>Content Writer</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text">Sugandha is a well established content writer. She started 3 years ago and is already earning in 6 figures through freelancing. She writes for various national and global publications.</div>
+          <div class="btn">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="profile-3.jpeg">
+        </div>
+        <div class="top-text">
+          <div class="name">Anushka</div>
+          <p>Psychology Professor</p>
+        </div>
+        <div class="bottom-text">
+          <div class="text">Anushka holds a PhD in pedagogical psychology and also has 3 years of experience in clinical psychology. She has worked for big names such as BLK, Lady Hardinge and Apollo Hospital.</div>
+          <div class="btn">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
